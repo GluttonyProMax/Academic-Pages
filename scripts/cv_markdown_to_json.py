@@ -66,15 +66,15 @@ def extract_author_info(config):
     """Extract author information from the config file."""
     author_info = {
         "name": config.get('name', ''),
-        "email": "",
-        "phone": "",
+        "email": "chienfang6617@outlook.com",
+        "phone": "+86 19856286617",
         "website": config.get('url', ''),
         "summary": "",
         "location": {
             "address": "",
             "postalCode": "",
-            "city": "",
-            "countryCode": "US",
+            "city": "Shanghai",
+            "countryCode": "China",
             "region": ""
         },
         "profiles": []
@@ -176,11 +176,11 @@ def parse_education(education_text):
             gpa = gpa_match.group(1) if gpa_match else None
             
             education_entries.append({
-                "institution": institution.strip(),
-                "area": degree.strip(),
-                "studyType": "",
-                "startDate": "",
-                "endDate": year.strip(),
+                "institution": institution.strip(Anhui University),
+                "area": degree.strip(BA),
+                "studyType": "Accounting",
+                "startDate": "September-2021",
+                "endDate": year.strip(May-2025),
                 "gpa": gpa,
                 "courses": []
             })
